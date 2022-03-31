@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/html 5 icon.ico" type="image/x-icon">
+    <title>Estudando Formatação</title>
+</head>
+<body>
+    <h1>Formatação em HTML 5</h1>
+    <h2>Introdução:</h2>
+    <p>Existem diversas formas de se formatar um texto usando diferentes <strong>Tags</strong><br>
+    <ins>É muito importante anotar as principais!!</ins></p>
+    <h3>Testando tags com o texto abaixo:</h3>
+    <p>
+        Estou aprendendo <abbr title="Hyper Text Markup Language">HTML</abbr>! <br>
+    <em><strong>Venha aprender Também!!</strong></em>    </p>
+    <h3>Código</h3>
+    <p>Olha só que legal esse código que eu fiz: <br>
+    <pre><code>
+    var res = document.querySelector('div#res') function getTimeNow(){
+    var agora = new Date()
+    var semana = agora.getDay()
+    var dia = agora.getDate()
+    var diaSem = ""
+    var month = agora.getMonth()
+    var mes = ""
+    var ano = agora.getFullYear()
+    switch (semana){
+        case 0:
+           diaSem = (`Domingo`)
+            break
+        case 1:
+            diaSem = (`Segunda-Feira`)
+            break
+        case 2:
+            diaSem = (`Terça-Feira`)
+            break
+        case 3:
+            diaSem = (`Quarta-Feira`)
+            break
+        case 4:
+            diaSem = ('Quinta-Feira')
+            break
+        case 5:
+            diaSem = (`Sexta-Feira`)
+            break
+        case 6:
+            diaSem = (`Sábado`)
+            break
+        default:
+            diaSem = (`[ERRO] Data inválida!`)
+            break
+    }
+    switch (month){
+        case 0:
+           mes = (`Janeiro`)
+            break
+        case 1:
+            mes = (`Fevereiro`)
+            break
+        case 2:
+            mes = (`Março`)
+            break
+        case 3:
+            mes = (`Abril`)
+            break
+        case 4:
+            mes = ('Maio')
+            break
+        case 5:
+            mes = (`Junho`)
+            break
+        case 6:
+            mes = (`Julho`)
+            break
+        case 7:
+            mes = (`Agosto`)
+            break
+        case 8:
+            mes = (`Setembro`)
+            break
+        case 9:
+            mes = (`Outubro`)
+            break
+        case 10:
+            mes = (`Novembro`)
+            break
+        case 11:
+            mes = (`Dezembro`)
+            break
+        default:
+            mes = (`[ERRO] Mês inválido!`)
+            break
+    }
+    var agora = new Date()
+    var hours = agora.getHours()
+    var minutes = agora.getMinutes()
+    var seconds = agora.getSeconds()
+    res.innerHTML = (`Hoje é ${diaSem}, ${hours} de ${mes} de ${ano}.<br/>`)
+    res.innerHTML += (`Agora são: <strong>${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}</strong><br/>`)
+
+    if (hours >= 5 && hours <= 12){
+        res.innerHTML += ('Bom dia!')
+    } else if (hours > 12 && hours <= 18){
+        res.innerHTML += ('Boa Tarde!')
+    } else if (hours > 18 || hours < 5){
+        res.innerHTML += ('Boa noite!')
+    } else{
+        res.innerHTML += ('[ERRO] Hora inválida!]')
+    }
+    window.setInterval('getTimeNow()', 1000)
+}
+    </code></pre></p>
+
+    <h3>Descobri Algo!!</h3>
+    <h4>Que tag curiosa!</h4>
+    <p>Hmmmm, Então a Tag &lt;pre&gt; permite manter a formatação?<br>
+    Então pq ninguém sugeriu escrever assim em vez de usar um monte de &lt;br&gt;? <mark>Olha só:</mark> <br><br>
+<pre>
+     T
+     E 
+     S 
+     T 
+     E 
+
+
+     Será que ta mantendo a formatação conforme eu aperto Enter?
+
+
+
+
+
+     Sei lá
+
+
+
+
+
+
+
+     <strong>MANTEVEEEEE!!!!</strong>
+</pre></p>
+<h4>Não Acredito que manteve a formatação mesmo KKKKK</h4>
+<br>
+<p>
+<blockquote cite = "https://www.pensador.com/frases_de_albert_einstein/">
+    <pre>
+        "Duas coisas são infinitas: o universo e a estupidez humana.
+        Mas, em relação ao universo, ainda não tenho certeza absoluta."
+        (Albert Einstein)
+
+
+
+
+
+    </pre>
+</blockquote>
+</p>
+</h4>
+</body>
+</html>
