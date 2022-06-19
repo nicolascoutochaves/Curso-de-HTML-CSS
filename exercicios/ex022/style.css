@@ -1,1 +1,40 @@
 @charset "UTF-8";
+
+* {
+    padding: 0px;
+}
+
+body{
+    background: gray url('images/wallpaper002.jpg') center left repeat fixed;
+    background-size: cover;
+}
+
+
+div {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 13px;
+    border: 2px solid rgba(0, 0, 0, 0.062);
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.562);
+    background-color: gray;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+}
+
+#q1 {
+    background-image: url('images/wallpaper003.jpg');
+    background-size: cover;
+}
+
+#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+#q3 {
+    background-image: url('images/pattern003.png');
+}
+#q4{
+    background-color: skyblue;
+
+}
