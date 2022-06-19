@@ -33,8 +33,29 @@ div {
 
 #q3 {
     background-image: url('images/pattern003.png');
+    background-attachment: fixed;
 }
 #q4{
     background-color: skyblue;
 
+}
+
+#fora{
+    display: block;
+    position: relative;
+    background-image: url('images/pattern001.png');
+}
+#dentro{
+    background-image: url('images/wallpaper001.jpg');
+    background-size: cover;
+    border: none;
+    border-radius: 0px;
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
 }
