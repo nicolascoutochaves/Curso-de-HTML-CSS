@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 * {
+    margin: 0px;
     padding: 0px;
 }
 
@@ -11,41 +12,76 @@ body{
 
 
 div {
-    padding: 20px;
-    margin: 5px;
-    border-radius: 13px;
-    border: 4px solid rgba(0, 0, 0, 0.144);
-    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.562);
     background-color: gray;
     display: inline-block;
     height: 300px;
     width: 300px;
 }
 
+main {
+    max-width: 920px;
+    margin: auto;
+    background-color: skyblue;
+    border-radius: 15px;
+    padding: 20px;
+}
+p{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 20px;
+    text-indent: 30px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
 #q1 {
-    background-image: url('images/wallpaper002.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url('images/wallpaper003.jpg');
+    background-position: left top;
+    margin-top: 30px;
 }
 
 #q2 {
-    background-image: url('images/wallpaper002.jpg') ;
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url('images/wallpaper003.jpg');
+    background-position: center top;
 }
 
 #q3 {
-    background-image: url('images/wallpaper002.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background-image: url('images/wallpaper003.jpg');
+    background-position: right top;
 }
 #q4{
-    background-image: url('images/wallpaper002.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: skyblue;
-
+    background-image: url('images/wallpaper003.jpg');
+    background-position: left center;
 }
+#q5{
+    background-image: url('images/wallpaper003.jpg');
+    background-position: center center;
+}
+
+#q6{
+    background-image: url('images/wallpaper003.jpg');
+    background-position: right center;
+}
+
+#q7{
+    background-image: url('images/wallpaper003.jpg');
+    background-position: left bottom;
+    margin-bottom: 30px;
+}
+
+#q8{
+    background-image: url('images/wallpaper003.jpg');
+    background-position: center bottom;
+    margin-bottom: 30px;
+}
+
+#q9{
+    background-image: url('images/wallpaper003.jpg');
+    background-position: right bottom;
+    margin-bottom: 30px;
+}
+
 
 #fora{
     display: block;
