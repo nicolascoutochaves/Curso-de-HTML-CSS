@@ -81,3 +81,9 @@ a:visited {
     color: rgb(173, 169, 169);
 
 }
+
+footer{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
